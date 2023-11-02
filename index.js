@@ -19,7 +19,7 @@ app.get("/question", async (req, res) => {
     if (req.query.text) {
         const completion = await openai.chat.completions.create({
             messages: [{ role: "system", content: req.query.text }],
-            model: "gpt-4",
+            model: "gpt-4-1106-preview",
         });
 
         res.send(completion.choices[0]);
@@ -29,8 +29,8 @@ app.get("/question", async (req, res) => {
 });
 
 // Initialize server
-app.listen(5000, () => {
-    console.log("Running on port 5000.");
+app.listen(process.env.PORT || 3000, () => {
+    console.log("Running on port 3000.");
 });
 
 module.exports = app;
