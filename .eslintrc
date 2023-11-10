@@ -1,0 +1,74 @@
+{
+  "extends": ["eslint-config-airbnb-base", "prettier"],
+  "plugins": ["prettier"],
+  "globals": {
+    "it": true,
+    "xit": true,
+    "describe": true,
+    "xdescribe": true,
+    "beforeEach": true,
+    "before": true,
+    "afterEach": true,
+    "after": true,
+    "APP_BUILD_DATE": true,
+    "APP_BUILD_VERSION": true,
+    "APP_BUILD_SHA": true,
+    "roku": true,
+    "WTF": true,
+    "externalFetch": true
+  },
+  "parserOptions": {
+    "requireConfigFile": false,
+    "ecmaVersion": 2020
+  },
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "indent": [
+      0, 4, {
+        "SwitchCase": 1
+      }
+    ],
+    "prettier/prettier": [1],
+    "import/no-extraneous-dependencies": [0],
+    "react/no-this-in-sfc": [0],
+    "no-case-declarations": [0],
+    "import/prefer-default-export": [0],
+    "no-param-reassign": [0],
+    "radix": [0],
+    "no-plusplus": [0],
+    "import/no-unresolved": [0],
+    "import/no-mutable-exports": [2],
+    "no-shadow": [0],
+    "consistent-return": [0],
+    "no-use-before-define": [0],
+    "no-fallthrough": [0],
+    "no-restricted-globals": [0],
+    "no-unused-expressions": [0],
+    "import/extensions": [0],
+    "prefer-rest-params": [0],
+    "no-prototype-builtins": [0],
+    "array-callback-return": [0],
+    "no-nested-ternary": [0],
+    "one-var": [0],
+    "no-underscore-dangle": [0],
+    "prefer-destructuring": [1],
+    "import/order": [1],
+    "eqeqeq": [1],
+    "no-return-assign": [1],
+    "import/no-cycle": [1],
+    "import/named": [1],
+    "class-methods-use-this": [1],
+    "no-multi-assign": [0],
+    "no-empty": [0],
+    "import/no-named-as-default": 0,
+    "no-bitwise": "warn",
+    "default-case": "warn",
+    "no-unused-vars": "warn",
+    "arrow-body-style": "off",
+    "default-param-last": "warn",
+    "no-restricted-exports": "off",
+    "no-promise-executor-return": "warn",
+  }
+}
