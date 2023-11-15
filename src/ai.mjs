@@ -35,7 +35,10 @@ aiApp.get(
         } = req;
         if (text) {
             const completion = await openai.chat.completions.create({
-                messages: [{ role: "system", content: text }],
+                messages: [
+                    { role: "system", content: "answer as a Roku support representative" },
+                    { role: "user", content: text }
+                ],
                 model
             });
 
